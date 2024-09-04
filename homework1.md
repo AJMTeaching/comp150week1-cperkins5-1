@@ -6,6 +6,14 @@ Here are 5 programming homework questions with extended unit tests and usage res
 
 **Restrictions**: Do not use `string.count()` method or regular expressions (`re` module).
 
+vowels: ['a','e','i','o','u', 'A','E','I','O','U']
+vowel_count: int = 0
+for letter in s:
+if letter in vowels:
+vowel_count += 1
+return vowel_count
+
+
 **Unit Tests**:
 ```python
 def test_count_vowels():

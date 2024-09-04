@@ -37,6 +37,15 @@ def count_vowels(s: str) -> int:
     pass
 
 
+    # vowels: ['a','e','i','o','u','A','E','I','O','U']
+    vowels: str = "aeiouAEIOU"
+    vowel_count: int = 0
+    for letter in s:
+        if letter in vowels:
+            vowel_count += 1
+    return vowel_count
+    
+
 # Unit Tests for count_vowels
 def test_count_vowels():
     test(count_vowels("hello") == 2)
@@ -96,6 +105,11 @@ def word_lengths(words: list) -> list:
     """
     # TODO: Implement this function
     pass
+
+word_lenghts: list []
+for word in words:
+    word_lengths.append(len(word))
+return words_lenghts
 
 
 # Unit Tests for word_lengths
