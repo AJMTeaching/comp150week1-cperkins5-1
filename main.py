@@ -75,6 +75,8 @@ def merge_lists(list1: list, list2: list) -> list:
     # TODO: Implement this function
     pass
 
+# code for merging two separate list
+
 
 # Unit Tests for merge_lists
 def test_merge_lists():
@@ -105,11 +107,12 @@ def word_lengths(words: list) -> list:
     """
     # TODO: Implement this function
     pass
-
-word_lenghts: list []
-for word in words:
-    word_lengths.append(len(word))
-return words_lenghts
+# words = []
+# lengths = word_lengths(words)
+    word_lengths: list []
+    for word in words:
+        word_lengths.append(len(word))
+    return word_lengths
 
 
 # Unit Tests for word_lengths
@@ -119,7 +122,7 @@ def test_word_lengths():
     test(lengths == [5, 5, 6])
     test(word_lengths([]) == [])
     test(word_lengths(["word"]) == [4])
-    test(word_lengths(["short", "mediummm", "longesttttt"]) == [5, 8, 10])
+    test(word_lengths(["short", "mediummm", "longesttttt"]) == [5, 8, 11])
     test(word_lengths(["", "a", "ab", "abc"]) == [0, 1, 2, 3])
     test(word_lengths(["  ", "a b", " c "]) == [2, 3, 3])
 
