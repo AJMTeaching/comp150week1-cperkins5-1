@@ -76,8 +76,15 @@ def merge_lists(list1: list, list2: list) -> list:
     pass
 
 # code for merging two separate list
+# CANNOT use 'sorted()' 'sort()' 'list.extend()' 'list concatentation(+)'
 
+    list1 (list) == []
+    list2 (list) == []
+    for element in list1: []
+    print(list1.append([list2])) 
+    return merge_lists(list1, list2)
 
+ 
 # Unit Tests for merge_lists
 def test_merge_lists():
     list1 = [1, 3, 5]
@@ -109,7 +116,7 @@ def word_lengths(words: list) -> list:
     pass
 # words = []
 # lengths = word_lengths(words)
-    word_lengths: list []
+    word_lengths: list = []
     for word in words:
         word_lengths.append(len(word))
     return word_lengths
