@@ -1,16 +1,51 @@
 # ------------------------------------------------------------------------
 
 # Lab 1
+# Problem 1: Create a list called my_list
+my_list = [1, 5, 'apple', 20.5]
+print(my_list[0])
+# Problem 2: Using index, print element 'apple' from my_list
+for apple in my_list:
+    print(my_list.index(apple))
+# Tuesday: ask exactly how to print just 'apple' back.
+# Problem 3: Add 10 value to the end of my_list
+my_list.append(10)
+print(my_list)
+# Problem 4: Remove 20.5 from my_list using remove()
+if 20.5 in my_list:
+        my_list.remove(20.5)
+print(my_list)
+# Problem 5: Reverse the element order in my_list
+list.reverse(my_list)
+print(my_list)
+
+# Lab 1 part 2:
 # Problem 1
-# Put your solution here, make sure I can run it by running this file. Do not submit it commented out.
-
+# Question: what would be the function code to distinguish the list from the dictionaries. or what name would have properly worked to allow full test to run?
+key: {('name', 'age', 'job')}
+value: {('John', 30, 'teacher')}
+my_list == dict
+my_dict_person[key] == {(value)}
 # Problem 2
-# Put your solution here, make sure I can run it by running this file. Do not submit it commented out.
-
+try:
+    print(my_dict_person['job'])
+except KeyError:
+    print("Key not found")
+# Problem 3
+my_dict_person[{'city'}] = 'Paris'
+print(my_dict_person)
+# Problem 4
+if key in my_dict:
+    del my_dict_person[{'age'}]
+print(my_dict_person)
+# Problem 5
+for key, value in my_dict_person.items():
+    print(f"Key: {key}, Value: {value}")
 # -----------------------------------------------------------------------------
 
 
 # Importing sys for test function
+from audioop import add
 import sys
 
 
@@ -78,16 +113,10 @@ def merge_lists(list1: list, list2: list) -> list:
 # code for merging two separate list
 # CANNOT use 'sorted()' 'sort()' 'list.extend()' 'list concatentation(+)'
 
-    list1 (list) = []
-    list2 (list) = []
-    merge = merge_lists(list1, list2)
-    for element in list1: []
-
-    print(list1.append([list2])) 
-    return merge_lists(list1, list2)
-   
-
-
+    for elements in list1:
+        if list1.append(list2):
+            print(merge_lists)
+    
 # Unit Tests for merge_lists
 def test_merge_lists():
     list1 = [1, 3, 5]
@@ -119,6 +148,7 @@ def word_lengths(words: list) -> list:
     pass
 # words = []
 # lengths = word_lengths(words)
+
     word_lengths: list = []
     for word in words:
         word_lengths.append(len(word))
@@ -150,6 +180,11 @@ def reverse_string(s: str) -> str:
     """
     # TODO: Implement this function
     pass
+    s = str
+    text = []
+    for text in str:
+        reverse_string(text)
+    return print(reverse_string)
 
 
 # Unit Tests for reverse_string
@@ -180,6 +215,11 @@ def intersection(list1: list, list2: list) -> list:
     # TODO: Implement this function
     pass
 
+    list1 == []
+    list2 == []
+    result = intersection(list1, list2)
+    list1.join(list2)
+    print(list)
 
 # Unit Tests for intersection
 def test_intersection():
