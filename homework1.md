@@ -34,7 +34,9 @@ def test_count_vowels():
 **Description**: Write a function that takes two sorted lists and merges them into a single sorted list. Implement the merging algorithm yourself using loops and comparisons.
 
 **Restrictions**: You may not use the `sorted()` or `sort()` Python built-in functions, `list.extend()`, or list concatenation (`+`) to solve this question.
-
+# step1: this question is asking me to write a function that takes two sorted list and merge them into one.
+# step2: write a pseudocode:
+# step3: iterate over the input list 
 **Unit Tests**:
 ```python  
 def test_merge_lists():

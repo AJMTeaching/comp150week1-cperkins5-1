@@ -78,13 +78,16 @@ def merge_lists(list1: list, list2: list) -> list:
 # code for merging two separate list
 # CANNOT use 'sorted()' 'sort()' 'list.extend()' 'list concatentation(+)'
 
-    list1 (list) == []
-    list2 (list) == []
+    list1 (list) = []
+    list2 (list) = []
+    merge = merge_lists(list1, list2)
     for element in list1: []
+
     print(list1.append([list2])) 
     return merge_lists(list1, list2)
+   
 
- 
+
 # Unit Tests for merge_lists
 def test_merge_lists():
     list1 = [1, 3, 5]

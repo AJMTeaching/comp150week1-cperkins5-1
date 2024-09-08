@@ -1,3 +1,6 @@
+from main import merge_lists
+
+
 a = [22,33,43,55,70]
 # printing each number in a list on a new line.
 for number in a:
@@ -19,4 +22,13 @@ for number in a:
         print(f"I found an odd number! which is (number)")
         odd_numbers.append(number)
         print(odd_numbers)
+
+# merge two sorted list into one list
+def test_merge_list():
+    list1 = [1,3,5]
+    list2 = [2,4,6]
+    merged = merge_lists(list1, list2)
+    for element in list1:
+        print(list1.append([list2]))
+    return merge_lists(list1, list2)
 
