@@ -24,50 +24,55 @@ for number in a:
         print(odd_numbers)
 
 # merge two sorted list into one list
-def test_merge_list():
-    list1 = [1,3,5]
-    list2 = [2,4,6]
-    merged = merge_lists(list1, list2)
-    for element in list1:
-        print(list1.append([list2]))
-    return merge_lists(list1, list2)
+#def test_merge_list():#
+  #  list1 = [1,3,5]
+  #  list2 = [2,4,6]
+  #  merged = merge_lists(list1, list2)
+  #  for element in list1:
+  #      print(list1.append([list2]))
+  #  return merge_lists(list1, list2)
 
-    list1 () == []
-    list2 () == []
-    merge = merge_lists(list1, list2)
-    for element in list1:
-        print(f{"list1.append(add[list2])"})
-    return merge_lists(list1, list2)
+  #  list1 () == []
+  #  list2 () == []
+  #  merge = merge_lists(list1, list2)
+  #  for element in list1:
+  #      print(f{"list1.append(add[list2])"})
+   # return merge_lists(list1, list2)
 
-list1 () == []
-    list2 () == []
-    merge = merge_lists(list1, list2)
-    for elements in list1:
+#list1 () == []
+    #list2 () == []
+   # merge = merge_lists(list1, list2)
+   # for elements in list1:
         print([list1.__add__(list2)])
-    return merge_lists(list1, list2)
+   # return merge_lists(list1, list2)
 
 
 
-    my_list = [1, 5, 'apple', 20.5]
-        my_list.index('apple'):
-            return my_list
+   # my_list = [1, 5, 'apple', 20.5]
+       # my_list.index('apple'):
+            #return my_list
 
-key: {('name', 'age', 'job')}
-value: {('John', 30, 'teacher')}
-my_list == dict
-my_dict_person[key] == {(value)}
+#key: {('name', 'age', 'job')}
+#value: {('John', 30, 'teacher')}
+#my_list == dict
+#my_dict_person[key] == {(value)}
 # Problem 2
-try:
-    print(my_dict_person['job'])
-except KeyError:
-    print("Key not found")
+#try:
+   # print(my_dict_person['job'])
+#except KeyError:
+   # print("Key not found")
 # Problem 3
-my_dict_person[{'city'}] = 'Paris'
-print(my_dict_person)
+#my_dict_person[{'city'}] = 'Paris'
+#print(my_dict_person)
 # Problem 4
-if key in my_dict:
-    del my_dict_person[{'age'}]
-print(my_dict_person)
+#if key in my_dict:
+ #   del my_dict_person[{'age'}]
+#print(my_dict_person)
 # Problem 5
-for key, value in my_dict_person.items():
-    print(f"Key: {key}, Value: {value}")
+#for key, value in my_dict_person.items():
+  #  print(f"Key: {key}, Value: {value}")
+
+
+numbers = [1,2,3,4,5]
+squared = [x**2 for x in numebers if x % 2 == 0]
+print(squared)

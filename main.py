@@ -24,22 +24,22 @@ print(my_list)
 # Question: what would be the function code to distinguish the list from the dictionaries. or what name would have properly worked to allow full test to run?
 key: {('name', 'age', 'job')}
 value: {('John', 30, 'teacher')}
-my_list == dict
-my_dict_person[key] == {(value)}
+person : {'name', {'John'}, 'age', {'30'}, 'job', {'teacher'}}
+person[key] == {(value)}
 # Problem 2
 try:
-    print(my_dict_person['job'])
+    print(person['job'])
 except KeyError:
     print("Key not found")
 # Problem 3
-my_dict_person[{'city'}] = 'Paris'
-print(my_dict_person)
+person[{'city'}] = 'Paris'
+print(person)
 # Problem 4
-if key in my_dict:
-    del my_dict_person[{'age'}]
-print(my_dict_person)
+if key in person:
+    del person[{'age'}]
+print(person)
 # Problem 5
-for key, value in my_dict_person.items():
+for key, value in person.items():
     print(f"Key: {key}, Value: {value}")
 # -----------------------------------------------------------------------------
 
@@ -96,7 +96,7 @@ def test_count_vowels():
 
 
 # Function 2: merge_lists
-def merge_lists(list1: list, list2: list) -> list:
+def merged_lists(list1: list, list2: list) -> list:
     """
     Merge two sorted lists into a single sorted list.
 
@@ -110,12 +110,30 @@ def merge_lists(list1: list, list2: list) -> list:
     # TODO: Implement this function
     pass
 
-# code for merging two separate list
 # CANNOT use 'sorted()' 'sort()' 'list.extend()' 'list concatentation(+)'
-
-    for elements in list1:
-        if list1.append(list2):
-            print(merge_lists)
+    if len(list1) == 0:
+        return list2
+    if len(list2) == 0:
+        return list1
+    while len(merged_lists) != 'how many times':
+        if not list1:
+            return add_remaining_items_to_merged_list(list2)
+        if not list2:
+            return add_remaining_items_to_merged_list(list1)
+        if list1[index1] < list2[index2]:
+            merged_lists.append(list1[list2])
+            if index1 + 1 == len(list1):
+                return add_remaining_items_to_merged_list(list2)
+            else:
+                index1 += 1
+        else:
+            merged_lists.append(list2[index2])
+            if index2 + 1 == len(list2):
+                return add_remaining_items_to_merged_list(list1)
+            else:
+                index2 += 1
+    return merged_lists
+        
     
 # Unit Tests for merge_lists
 def test_merge_lists():
@@ -184,7 +202,7 @@ def reverse_string(s: str) -> str:
     text = []
     for text in str:
         reverse_string(text)
-    return print(reverse_string)
+    return s[::-1]
 
 
 # Unit Tests for reverse_string
@@ -215,10 +233,13 @@ def intersection(list1: list, list2: list) -> list:
     # TODO: Implement this function
     pass
 
-    list1 == []
-    list2 == []
-    result = intersection(list1, list2)
-    list1.join(list2)
+    inter_list = []
+    for i in list1:
+        if i in list2:
+            inter_list
+    return inter_list
+
+    
     print(list)
 
 # Unit Tests for intersection
