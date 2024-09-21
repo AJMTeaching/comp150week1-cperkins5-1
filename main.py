@@ -110,28 +110,29 @@ def merged_lists(list1: list, list2: list) -> list:
     """
     # TODO: Implement this function
     pass
-
 # CANNOT use 'sorted()' 'sort()' 'list.extend()' 'list concatentation(+)'
+    
+    merged_lists = []
     if len(list1) == 0:
         return list2
     if len(list2) == 0:
         return list1
-    while len(merged_lists) != (''):
+    while len(merged_lists):
         if not list1:
             return add_remaining_items_to_merged_list(list2)
         if not list2:
             return add_remaining_items_to_merged_list(list1)
         merged_lists.append(list1[list2])
-        if index1 + 1 == len(list1):
-            return add_remaining_items_to_merged_list(list2)
-        else:
-            index1 += 1
-    else:
-        merged_lists.append(list2[index2])
-        if index2 + 1 == len(list2):
-            return add_remaining_items_to_merged_list(list1)
-        else:
-            index2 += 1
+        #if index1 + 1 == len(list1):
+            #return add_remaining_items_to_merged_list(list2)
+        #else:
+            #index1 += 1
+    #else:
+        #merged_lists.append(list2[index2])
+        #if index2 + 1 == len(list2):
+            #return add_remaining_items_to_merged_list(list1)
+        #else:
+            #index2 += 1
     return merged_lists
     pass
         
@@ -199,9 +200,9 @@ def reverse_string(s: str) -> str:
     """
     # TODO: Implement this function
     pass
-    s = str
+    string = ()
     text = []
-    for text in str:
+    for text in string:
         reverse_string(text)
     return s[::-1]
 
@@ -238,6 +239,10 @@ def intersection(list1: list, list2: list) -> list:
     for i in list1:
         if i in list2:
             inter_list
+    else:
+        for i in list1:
+            if i in list2:
+                list1.append(list2)
     return inter_list
 
 # Unit Tests for intersection
