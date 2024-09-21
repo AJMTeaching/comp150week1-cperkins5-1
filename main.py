@@ -21,26 +21,27 @@ print(my_list)
 
 # Lab 1 part 2:
 # Problem 1
-# Question: what would be the function code to distinguish the list from the dictionaries. or what name would have properly worked to allow full test to run?
+person = [{}]
 key: {('name', 'age', 'job')}
 value: {('John', 30, 'teacher')}
-person : {'name', {'John'}, 'age', {'30'}, 'job', {'teacher'}}
-person[key] == {(value)}
-# Problem 2
+person = [{'name':'John', 'age':30, 'job':'teacher'}]
+
+# Problem 2 
 try:
-    print(person['job'])
+    print(person,{'job'})
 except KeyError:
     print("Key not found")
-# Problem 3
-person[{'city'}] = 'Paris'
+# Problem 3     
+#person['city'] = 'Paris'
 print(person)
 # Problem 4
-if key in person:
-    del person[{'age'}]
-print(person)
+#for key in person:
+#    del person['age']
+#print(person)
 # Problem 5
-for key, value in person.items():
-    print(f"Key: {key}, Value: {value}")
+#for key, value in person.items():
+#   print(f"key: {key}, value: {value}")
+pass
 # -----------------------------------------------------------------------------
 
 
@@ -115,40 +116,40 @@ def merged_lists(list1: list, list2: list) -> list:
         return list2
     if len(list2) == 0:
         return list1
-    while len(merged_lists) != 'how many times':
+    while len(merged_lists) != (''):
         if not list1:
             return add_remaining_items_to_merged_list(list2)
         if not list2:
             return add_remaining_items_to_merged_list(list1)
-        if list1[index1] < list2[index2]:
-            merged_lists.append(list1[list2])
-            if index1 + 1 == len(list1):
-                return add_remaining_items_to_merged_list(list2)
-            else:
-                index1 += 1
+        merged_lists.append(list1[list2])
+        if index1 + 1 == len(list1):
+            return add_remaining_items_to_merged_list(list2)
         else:
-            merged_lists.append(list2[index2])
-            if index2 + 1 == len(list2):
-                return add_remaining_items_to_merged_list(list1)
-            else:
-                index2 += 1
+            index1 += 1
+    else:
+        merged_lists.append(list2[index2])
+        if index2 + 1 == len(list2):
+            return add_remaining_items_to_merged_list(list1)
+        else:
+            index2 += 1
     return merged_lists
+    pass
         
     
 # Unit Tests for merge_lists
 def test_merge_lists():
     list1 = [1, 3, 5]
     list2 = [2, 4, 6]
-    merged = merge_lists(list1, list2)
+    merged = merged_lists(list1, list2)
     test(merged == [1, 2, 3, 4, 5, 6])
-    test(merge_lists([], []) == [])
-    test(merge_lists([1], [2]) == [1, 2])
-    test(merge_lists([1, 1], [2, 2]) == [1, 1, 2, 2])
-    test(merge_lists([1, 3, 5], []) == [1, 3, 5])
-    test(merge_lists([], [2, 4, 6]) == [2, 4, 6])
-    test(merge_lists([1, 2, 3], [4, 5, 6]) == [1, 2, 3, 4, 5, 6])
-    test(merge_lists([1, 3, 5, 7, 9], [2, 4, 6, 8, 10]) == [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
-    test(merge_lists([1, 1, 2, 3], [1, 2, 2, 3]) == [1, 1, 1, 2, 2, 2, 3, 3])
+    test(merged_lists([], []) == [])
+    test(merged_lists([1], [2]) == [1, 2])
+    test(merged_lists([1, 1], [2, 2]) == [1, 1, 2, 2])
+    test(merged_lists([1, 3, 5], []) == [1, 3, 5])
+    test(merged_lists([], [2, 4, 6]) == [2, 4, 6])
+    test(merged_lists([1, 2, 3], [4, 5, 6]) == [1, 2, 3, 4, 5, 6])
+    test(merged_lists([1, 3, 5, 7, 9], [2, 4, 6, 8, 10]) == [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+    test(merged_lists([1, 1, 2, 3], [1, 2, 2, 3]) == [1, 1, 1, 2, 2, 2, 3, 3])
 
 
 # Function 3: word_lengths
@@ -238,9 +239,6 @@ def intersection(list1: list, list2: list) -> list:
         if i in list2:
             inter_list
     return inter_list
-
-    
-    print(list)
 
 # Unit Tests for intersection
 def test_intersection():
